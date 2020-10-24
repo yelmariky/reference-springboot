@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  
+  labels:
+    run: reference-springboot
+  name: reference-springboot
+ 
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: reference-springboot
+  
+  template:
+    metadata:
+     
+      labels:
+        run: reference-springboot
+    spec:
+      containers:
+      - name: reference-springboot
+        image: event/backend:latest
+        imagePullPolicy: Never
+        ports:
+          - name: http
+            containerPort: 8081 # The port that the container exposes
+        resources:
+          limits:
+            cpu: "0.5"
+            memory: "500Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  
+  labels:
+    run: reference-springboot
+  name: reference-springboot
+  
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8081
+  selector:
+    run: reference-springboot
+  type: ClusterIP

@@ -1,0 +1,10 @@
+fr\bnpparibas\prevoyance\poc\reference\DBUnit.class
+fr\bnpparibas\prevoyance\poc\reference\controller\ProductController.class
+fr\bnpparibas\prevoyance\poc\reference\mappers\ProductMapper.class
+fr\bnpparibas\prevoyance\poc\reference\service\ProductService.class
+fr\bnpparibas\prevoyance\poc\reference\entities\ProductEntity.class
+fr\bnpparibas\prevoyance\poc\reference\repositories\ProductRespository.class
+fr\bnpparibas\prevoyance\poc\reference\model\ProductDTO.class
+fr\bnpparibas\prevoyance\poc\reference\service\impl\ProductServiceImpl.class
+fr\bnpparibas\prevoyance\poc\reference\Application.class
+fr\bnpparibas\prevoyance\poc\reference\mappers\ProductMapperImpl.class
