@@ -2,8 +2,12 @@ package fr.bnpparibas.prevoyance.poc.reference.model;
 
 import java.math.BigDecimal;
 
+import javax.validation.constraints.NotNull;
+
 public class ProductDTO {
+	@NotNull
     private String name;
+	@NotNull
     private String description;
     private int price;
     public String getName() {
@@ -24,5 +28,5 @@ public class ProductDTO {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-    
+	
 }

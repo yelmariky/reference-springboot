@@ -3,15 +3,24 @@ package fr.bnpparibas.prevoyance.poc.reference.service;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import fr.bnpparibas.prevoyance.poc.reference.apierrors.EntityNotFoundException;
 import fr.bnpparibas.prevoyance.poc.reference.entities.ProductEntity;
+import fr.bnpparibas.prevoyance.poc.reference.model.ProductDTO;
 
 public interface ProductService {
-	 public List<ProductEntity> findAll() ;
+	    public List<ProductEntity> findAll() ;
 
-	    public Optional<ProductEntity> findById(Long id) ;
+	    public ProductDTO getProductById(Long id) throws EntityNotFoundException ;
 
-	    public ProductEntity save(ProductEntity stock) ;
+	    public ProductDTO saveProduct(ProductEntity stock) ;
 
-	    public void deleteById(Long id);
+	    public void deleteProductById(Long id);
+	    
+	    public ProductDTO updateProduct(Long id, ProductDTO productDTO) throws EntityNotFoundException;
 
 }

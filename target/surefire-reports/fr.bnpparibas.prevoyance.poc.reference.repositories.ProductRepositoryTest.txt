@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: fr.bnpparibas.prevoyance.poc.reference.repositories.ProductRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.109 s - in fr.bnpparibas.prevoyance.poc.reference.repositories.ProductRepositoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.204 s - in fr.bnpparibas.prevoyance.poc.reference.repositories.ProductRepositoryTest
